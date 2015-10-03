@@ -1,6 +1,6 @@
 trigger Number12 on Account (after delete, after insert, after update) {
 
-    System.debug('Total Number of SOQL Queries allowed in this Apex code context: ' +  Limits.getLimitQueries());
+    System.debug('Total Number of SOQL Queries allowed in this Apex code context: tirgger name change test ' +  Limits.getLimitQueries());
     System.debug('Total Number of records that can be queried  in this Apex code context: ' +  Limits.getLimitDmlRows());
     System.debug('Total Number of DML statements allowed in this Apex code context: ' +  Limits.getLimitDmlStatements() );
     System.debug('Total Number of CPU usage time (in ms) allowed in this Apex code context: ' +  Limits.getLimitCpuTime());
