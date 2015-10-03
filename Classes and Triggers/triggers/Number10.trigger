@@ -14,7 +14,7 @@ trigger Number10 on Account (before delete, before insert, before update) {
     	
         for(Opportunity o: opptysClosedLost){	
     		if(o.accountid == a.id)
-    		   System.debug('Do more logic here...');
+    		   System.debug('Do more logic here...changes are here');
         }
         
         
