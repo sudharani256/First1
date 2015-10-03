@@ -4,7 +4,8 @@ trigger Number4 on Account (before insert, before update) {
  
    //Loop through all records in the Trigger.new collection
    for(Account a: Trigger.new){
-      //Concatenate the Name and billingState into the Description field coparison changes reflect
+      //Concatenate the Name and billingState into the Description field coparison changes reflect chnage multiple
+      //time wise
       a.Description = a.Name + ':' + a.BillingState;
    }
    
